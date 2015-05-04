@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Colorgy Front</title>
+		<meta charset="utf-8">
+		<meta name="keyword" content="COLORGY,BOOKS" />
+		<meta property="og:title" content="Colorgy Front"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,height=device-height" >
+		<link href="normalize.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="./css/checkout-boxes.css" />
+		<link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.css" rel="stylesheet" >
+		<link rel="stylesheet" type="text/css" href="./readme.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css" />
+		<link rel="stylesheet" type="text/css" href="css/checkout-cornerflat.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="icon" href="./images/favicon.png" size="16x16" type="image/png">
+
+
+	</head>
+	<body>
+		<style type="text/css">
+			body{
+				background-color: #DDD !important;
+                padding-bottom: 0px !important;
+			}
+			input{
+				font-size: 30px;
+			}
+		</style>
+
+			<div class="navigation_bar fixed-nav">
+		      <nav class="navbar navbar-default">
+		        <div class="container-fluid">
+		          <!-- Brand and toggle get grouped for better mobile display -->
+		          <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand" href="./index.html">
+		              <img class="nav-logo" src="./images/header_logo.png">
+		            </a>
+		          </div>
+
+		          <!-- Collect the nav links, forms, and other content for toggling -->
+		          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		            <ul class="nav navbar-nav">
+		              <li><a href="#element1">購物流程</a></li>
+		              <li><a href="./order-tracking.html">訂單查詢</a></li>
+		              <li><a href="./mainjew_page.html">主揪介面</a></li>
+		            </ul>
+					<div class="checkout desktop-checkout">
+						<div class="checkout__button__number">
+								4
+						</div>
+						<a class="checkout__button" href="#"><!-- Fallback location -->
+							<span class="checkout__text">
+
+							</span>
+
+						</a>
+						<div class="checkout__order">
+							<div class="checkout__order-inner">
+								<table class="checkout__summary">
+									<thead>
+								        <tr><th>書本項目</th><th>金額</th><th>數量</th><th></th></tr>
+								    </thead>
+								    <tfoot>
+								        <tr><th colspan="2" class="checkout-total-th">總額 <span class="checkout__total">8000 NT</span></th></tr>
+								    </tfoot>
+								    <tbody>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="./images/stickycart-delete.png"></td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="./images/stickycart-delete.png"></td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="./images/stickycart-delete.png"></td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="./images/stickycart-delete.png"></td></tr>
+
+									</tbody>
+								</table><!-- /checkout__summary -->
+
+								<a href="./cart.html"><button class="checkout__option cart-checkout-button">我要結帳</button></a>
+
+								<button class="checkout__close checkout__cancel close-button"><i class="icon fa fa-fw fa-close"></i></button>
+							</div><!-- /checkout__order-inner -->
+						</div><!-- /checkout__order -->
+					</div><!-- /checkout -->
+
+
+		            <ul class="nav navbar-nav navbar-right">
+
+					<div class="profile">
+		            	<div class="headphoto">
+							<img src="./images/headphoto.jpg">
+						</div>
+						<p>劉政軒</p>
+						<div class="profile-field">
+								<ul class="profile-field-ul">
+									<a href="#"><li>基本資料</li></a>
+									<a href="#"><li>聯絡我們</li></a>
+									<a href="#"><li>訂單查詢</li></a>
+									<a href="#"><li>我的通知</li></a>
+									<a href="#"><li>你揪的團</li></a>
+									<a href="#"><li>登出</li></a>
+								</ul>
+						</div>
+					</div>
+		            </ul>
+		          </div><!-- /.navbar-collapse -->
+		        </div><!-- /.container-fluid -->
+		      </nav>
+			</div>
+			<div class="checkout mobile-checkout">
+						<a class="checkout__button" href="#"><!-- Fallback location -->
+							<span class="checkout__text">
+
+							</span>
+						</a>
+						<div class="checkout__order">
+							<div class="checkout__order-inner">
+								<table class="checkout__summary">
+									<thead>
+								        <tr><th>書本項目</th><th>金額</th><th>數量</th></tr>
+								    </thead>
+								    <tfoot>
+								        <tr><th colspan="2" class="checkout-total-th">總額 <span class="checkout__total">8000 NT</span></th></tr>
+								    </tfoot>
+								    <tbody>
+										<tr><td>電子學 <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td></tr>
+										<tr><td>電子學 <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td></tr>
+										<tr><td>電子學 <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td></tr>
+										<tr><td>電子學 <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td></tr>
+
+									</tbody>
+								</table><!-- /checkout__summary -->
+								<button class="checkout__option checkout__option--silent checkout__cancel continue-buy"><i class="fa fa-angle-left"></i> 繼續購物...</button>
+
+								<a href="./cart.html"><button class="checkout__option cart-checkout-button">我要結帳</button></a>
+
+								<button class="checkout__close checkout__cancel close-button"><i class="icon fa fa-fw fa-close"></i></button>
+							</div><!-- /checkout__order-inner -->
+						</div><!-- /checkout__order -->
+		</div><!-- /checkout -->
+
+
+			<section class="book-page-wrapper">
+			<div class="row">
+				<div class="col-md-6">
+					<img src="./images/sedra.jpg">
+				</div>
+				<div class="col-md-6">
+                    <div class="book-page-text">
+    					<h1 class="book-page-title">INTRODUCTION TO ELECTRIC CIRCUITS 8/E</h1>
+    					<h3 class="book-page-author">作者 : Sedra Smith</h3>
+    					<p>該整然職天國去他東代及企不有望電。如股護了不實的不把行時，些最眾衣想發效過級型賣金回觀；書正觀山的回作人物嚴部出標修百食投型？<br><br>
+    					開這許像，府兩臺查片麼一巴以元；賽和到自跟會竟注獎案容！打洲常電色境可告點沒助人明夫。的打德讀由個找，原馬他，象語是所動題獲話同酒手與過係！教內器來推。白的爭人連。可血足我打多！</p>
+                    </div>
+	                <div class="row">
+						<div class="col-md-12">
+
+							<div class="select-box book-page-selector">
+								<h3>課程選擇 ：</h3>
+								<div class="cs-select cs-skin-elastic" tabindex="0">
+									<span class="cs-placeholder book-page-placeholder">請選擇您的課程</span>
+									<div class="cs-options">
+										<ul>
+											<li data-option="" data-value="台科大"><span>電子學-彭盛裕</span></li>
+											<li data-option="" data-value="元智大學"><span>電子學-蔡超人</span></li>
+										</ul>
+									</div>
+									<select class="cs-select cs-skin-elastic">
+										<option value="" disabled="" selected="">請選擇您的課程</option>
+										<option value="台科大">電子學-彭盛裕</option>
+										<option value="元智大學">電子學-蔡超人</option>
+									</select>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-md-3">
+							<div class="book-page-quantity">
+								<h3>數量：</h3><input class="input-number" type="number" name="quantity" placeholder="1">
+							</div>
+
+						</div>
+						<div class="col-md-9">
+							<button type="submit" class="btn btn-default book-page-add-to-cart-button">加入購物車</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			</section>
+            <section class="container-fluid book-page-group-section">
+
+                <div class="row">
+                    <h1 class="book-page-group-h1">揪團班級</h1>
+                    <div class="col-md-4">
+                        <div class="col-white-block">
+                            <div class="book-page-group-headphoto">
+                                <img src="./images/headphoto.jpg">
+                            </div>
+
+                            <h3 class="book-page-group-title">劉政軒</h3>
+                            <p>課程名稱： 電子電路</p>
+                            <p>教授： 彭盛裕</p>
+                            <p>上課時間： M6 M7 M8</p>
+                            <div class="follower-photo-slider-box">
+
+								<div class="follower-photo-slider">
+
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+
+								</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    	<div class="col-white-block">
+                            <div class="book-page-group-headphoto">
+                                <img src="./images/headphoto.jpg">
+                            </div>
+
+                            <h3 class="book-page-group-title">劉政軒</h3>
+                            <p>課程名稱： 電子電路</p>
+                            <p>教授： 彭盛裕</p>
+                            <p>上課時間： M6 M7 M8</p>
+                            <div class="follower-photo-slider-box">
+
+								<div class="follower-photo-slider">
+
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+									<img src="./images/headphoto.jpg">
+
+								</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="col-white-block">
+                            <div class="book-page-group-headphoto">
+                                <img src="./images/headphoto.jpg">
+                            </div>
+
+                            <h3 class="book-page-group-title">劉政軒</h3>
+                            <p>課程名稱： 電子電路</p>
+                            <p>教授： 彭盛裕</p>
+                            <p>上課時間： M6 M7 M8</p>
+                            <div class="follower-photo-slider-box">
+
+								<div id="box1" class="follower-photo-slider">
+
+									<img class="follower-photo-slider-img" src="./images/headphoto.jpg">
+									<img class="follower-photo-slider-img" src="./images/headphoto.jpg">
+									<img class="follower-photo-slider-img" src="./images/headphoto.jpg">
+									<img class="follower-photo-slider-img" src="./images/headphoto.jpg">
+									<img class="follower-photo-slider-img" src="./images/headphoto.jpg">
+									<img class="follower-photo-slider-img" src="./images/headphoto.jpg">
+									<img class="follower-photo-slider-img" src="./images/headphoto.jpg">
+
+								</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+
+
+
+			<footer>
+				<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			<script src="./dist/js/bootstrap.min.js"></script>
+			<script src="./colorgy_front.js"></script>
+			<script src="./js/classie.js"></script>
+			<script>
+				(function() {
+					[].slice.call( document.querySelectorAll( '.checkout' ) ).forEach( function( el ) {
+						var openCtrl = el.querySelector( '.checkout__button' ),
+							closeCtrls = el.querySelectorAll( '.checkout__cancel' );
+
+						openCtrl.addEventListener( 'click', function(ev) {
+							ev.preventDefault();
+							classie.add( el, 'checkout--active' );
+						} );
+
+						[].slice.call( closeCtrls ).forEach( function( ctrl ) {
+							ctrl.addEventListener( 'click', function() {
+								classie.remove( el, 'checkout--active' );
+							} );
+						} );
+					} );
+				})();
+			</script>
+				<script src="js/classie.js"></script>
+				<script src="js/selectFx.js"></script>
+			<script>
+				(function() {
+					[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+						new SelectFx(el);
+					} );
+				})();
+			</script>
+			</footer>
+
+
+		</body>
+</html>

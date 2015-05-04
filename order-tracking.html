@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Colorgy Front</title>
+		<meta charset="utf-8">
+		<meta name="keyword" content="COLORGY,BOOKS" />
+		<meta property="og:title" content="Colorgy Front"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,height=device-height" >
+		<link href="normalize.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="./css/checkout-boxes.css" />
+		<link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.css" rel="stylesheet" >
+		<link rel="stylesheet" type="text/css" href="./readme.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css" />
+		<link rel="stylesheet" type="text/css" href="css/component-table.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="icon" href="./images/favicon.png" size="16x16" type="image/png">
+
+	</head>
+	<body>
+			<style type="text/css">
+				.panel-body{
+					padding: 0px !important;
+				}
+				.sticky-wrap{
+					margin: 0 0 !important;
+				}
+				.select-box{
+					margin: 0px;
+					font-size: 5px;
+				}
+
+				.cs-skin-elastic .cs-options span{
+					padding: 0.8em 1em 0.8em 1em;
+				}
+				section.col-md-9{
+					padding-left: 20px !important;
+				}
+				label{
+					width: 100%;
+				}
+				tr{
+					height: 80px;
+				}
+				input{
+					font-size: 16px;
+				}
+			</style>
+			<div class="navigation_bar fixed-nav">
+		      <nav class="navbar navbar-default">
+		        <div class="container-fluid">
+		          <!-- Brand and toggle get grouped for better mobile display -->
+		          <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand" href="./index.html">
+		              <img class="nav-logo" src="./images/header_logo.png">
+		            </a>
+		          </div>
+
+		          <!-- Collect the nav links, forms, and other content for toggling -->
+		          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		            <ul class="nav navbar-nav">
+		              <li><a href="#element1">購物流程</a></li>
+		              <li><a href="./order-tracking.html">訂單查詢</a></li>
+		              <li><a href="./mainjew_page.html">主揪介面</a></li>
+		            </ul>
+
+		            <ul class="nav navbar-nav navbar-right">
+
+					<div class="profile">
+		            	<div class="headphoto">
+							<img src="./images/headphoto.jpg">
+						</div>
+						<p>劉政軒</p>
+						<div class="profile-field">
+								<ul class="profile-field-ul">
+									<a href="#"><li>基本資料</li></a>
+									<a href="#"><li>聯絡我們</li></a>
+									<a href="#"><li>訂單查詢</li></a>
+									<a href="#"><li>我的通知</li></a>
+									<a href="#"><li>你揪的團</li></a>
+									<a href="#"><li>登出</li></a>
+								</ul>
+						</div>
+					</div>
+		            </ul>
+		          </div><!-- /.navbar-collapse -->
+		        </div><!-- /.container-fluid -->
+		      </nav>
+			</div>
+			<div class="wrapper" style="width:100%; margin-top:100px; padding-left: 20px; padding-right: 20px;">
+				<div class="row">
+				<section class="col-md-12">
+					<h1>訂單查詢</h1>
+
+					<div class="cart-table">
+							        <table>
+										<thead>
+											<tr>
+												<th>訂單編號</th>
+												<th>總額</th>
+												<th>付款方式</th>
+												<th>發票種類</th>
+												<th>主揪</th>
+												<th>到貨時間</th>
+												<th>到貨地點</th>
+					   						    <th>付款狀態</th>
+												<th>發票狀態</th>
+												<th>查看明細</th>
+
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1234567</td>
+												<td>2399</td>
+												<td>ibon代碼付款</td>
+												<td>電子發票</td>
+												<td>
+													<div class="headphoto">
+														<img src="./images/headphoto.jpg">
+													</div>
+												</td>
+												<td>2015/3/10</td>
+												<td>學生會辦</td>
+												<td>已付款</td>
+												<td>等待中</td>
+												<td><a href="#">查看</a></td>
+
+											</tr>
+											<tr>
+												<td>1234567</td>
+												<td>2399</td>
+												<td>ibon代碼付款</td>
+												<td>電子發票</td>
+												<td>
+													<div class="headphoto">
+														<img src="./images/headphoto.jpg">
+													</div>
+												</td>
+												<td>2015/3/10</td>
+												<td>學生會辦</td>
+												<td>已付款</td>
+												<td>等待中</td>
+												<td><a href="#">查看</a></td>
+											</tr>
+											<tr>
+												<td>1234567</td>
+												<td>2399</td>
+												<td>ibon代碼付款</td>
+												<td>電子發票</td>
+												<td>
+													<div class="headphoto">
+														<img src="./images/headphoto.jpg">
+													</div>
+												</td>
+												<td>2015/3/10</td>
+												<td>學生會辦</td>
+												<td>已付款</td>
+												<td>等待中</td>
+												<td><a href="#">查看</a></td>
+											</tr>
+
+										</tbody>
+									</table>
+						</div>
+
+
+				</section>
+
+				</div>
+				</div>
+
+
+
+
+
+
+		<footer>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			<script src="./dist/js/bootstrap.min.js"></script>
+			<script src="./colorgy_front.js"></script>
+			<script src="./js/classie.js"></script>
+			<script src="js/selectFx.js"></script>
+			<script>
+				(function() {
+					[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+						new SelectFx(el);
+					} );
+				})();
+			</script>
+		</footer>
+	</body>
+</html>

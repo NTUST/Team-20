@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Colorgy Front</title>
+		<meta charset="utf-8">
+		<meta name="keyword" content="COLORGY,BOOKS" />
+		<meta property="og:title" content="Colorgy Front"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,height=device-height" >
+		<link href="normalize.css" rel="stylesheet">
+
+		<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="./css/checkout-boxes.css" />
+		<link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.css" rel="stylesheet" >
+		<link rel="stylesheet" type="text/css" href="./readme.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css" />
+		<link rel="stylesheet" type="text/css" href="css/component-table.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="icon" href="./images/favicon.png" size="16x16" type="image/png">
+
+	</head>
+	<body>
+			<style type="text/css">
+				.panel-body{
+					padding: 0px !important;
+				}
+				.sticky-wrap{
+					margin: 0 0 !important;
+				}
+				.select-box{
+					margin: 0px;
+					font-size: 5px;
+				}
+
+				.cs-skin-elastic .cs-options span{
+					padding: 0.8em 1em 0.8em 1em;
+				}
+				label{
+					width: 100%;
+				}
+				tr{
+					height: 80px;
+				}
+				input{
+					font-size: 16px;
+				}
+				.cart-section{
+					width: 100% !important;
+ 				}
+			</style>
+			<div class="navigation_bar fixed-nav">
+		      <nav class="navbar navbar-default">
+		        <div class="container-fluid">
+		          <!-- Brand and toggle get grouped for better mobile display -->
+		          <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand" href="./index.html">
+		              <img class="nav-logo" src="./images/header_logo.png">
+		            </a>
+		          </div>
+
+		          <!-- Collect the nav links, forms, and other content for toggling -->
+		          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		            <ul class="nav navbar-nav">
+		              <li><a href="#element1">購物流程</a></li>
+		              <li><a href="./order-tracking.html">訂單查詢</a></li>
+		              <li><a href="./mainjew_page.html">主揪介面</a></li>
+		            </ul>
+
+		            <ul class="nav navbar-nav navbar-right">
+
+					<div class="profile">
+		            	<div class="headphoto">
+							<img src="./images/headphoto.jpg">
+						</div>
+						<p>劉政軒</p>
+						<div class="profile-field">
+								<ul class="profile-field-ul">
+									<a href="#"><li>基本資料</li></a>
+									<a href="#"><li>聯絡我們</li></a>
+									<a href="#"><li>訂單查詢</li></a>
+									<a href="#"><li>我的通知</li></a>
+									<a href="#"><li>你揪的團</li></a>
+									<a href="#"><li>登出</li></a>
+								</ul>
+						</div>
+					</div>
+		            </ul>
+		          </div><!-- /.navbar-collapse -->
+		        </div><!-- /.container-fluid -->
+		      </nav>
+			</div>
+
+			<div class="wrapper" style="width:100%; margin-top:53px;">
+				<section class="cart-section">
+					<div class="shopping-flow">
+						<div class="col-md-4 gray-pointer">
+							<h3>購物書包</h3>
+						</div>
+						<div class="col-md-4 gray-pointer">
+							<img src="./images/gray-pointer.png">
+							<h3>確認訂單</h3>
+						</div>
+						<div class="col-md-4 green-pointer">
+							<img src="./images/gray-pointer.png">
+							<h3>完成訂購</h3>
+						</div>
+
+					</div>
+					<div class="container-fluid thankyoupage-head-container">
+						<div style="background-color: rgb(221, 221, 221); padding:30px;">
+							<div class="row thankyoupage-header">
+
+								<div class="col-md-4" style="min-width:220px;">
+									<div class="thankyoupage-icon">
+
+									</div>
+								</div>
+								<div class="col-md-8">
+									<div class="thankyoupage-title">
+										<h3>親愛的 Colorgy User 您好，我們已經收到您的訂購資訊！</h3>
+									</div>
+									<div class="thankyoupage-text">
+										<p>
+											本網頁只是確認本系統已經收到您的訂購訊息，並提供您再次進行核對之用，不代表交易已經完成。<br>
+											經交易條件確認無誤，我們會另外以電子郵件將『ibon繳款編號』以及繳費期限等資訊寄給您，只有當我們收到全部商品總額，您的付款程序才算完成。
+										</p>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="reciept-content">
+								<div class="col-md-12">
+									<h3>訂單明細</h3>
+									<a href="./order-tracking.html"><p>更多訂單...</p></a>
+								</div>
+								<div class="col-md-12">
+									<div class="cart-table">
+								        <table>
+											<thead>
+												<tr>
+													<th>書名</th>
+													<th>作者</th>
+													<th>版次</th>
+													<th>價格</th>
+													<th>數量</th>
+													<th>課程/教授</th>
+													<th>主揪</th>
+													<th>小計</th>
+
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E</td>
+													<td>DORF</td>
+													<td>8/E</td>
+													<td>1299</td>
+													<td>2</td>
+													<td>
+														電子學-彭盛裕
+													</td>
+													<td>
+														<div class="headphoto">
+															<img src="./images/headphoto.jpg">
+														</div>
+													</td>
+													<td>2598</td>
+
+												</tr>
+												<tr>
+													<td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E</td>
+													<td>DORF</td>
+													<td>8/E</td>
+													<td>1299</td>
+													<td>2</td>
+													<td>
+														電子學-彭盛裕
+													</td>
+													<td>
+														<div class="headphoto">
+															<img src="./images/headphoto.jpg">
+														</div>
+													</td>
+													<td>2598</td>
+												</tr>
+												<tr>
+													<td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E</td>
+													<td>DORF</td>
+													<td>8/E</td>
+													<td>1299</td>
+													<td>2</td>
+													<td>
+														電子學-彭盛裕
+													</td>
+													<td>
+														<div class="headphoto">
+															<img src="./images/headphoto.jpg">
+														</div>
+													</td>
+													<td>2598</td>
+												</tr>
+
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<h3>付費方式</h3>
+									<p>7-11 ibon繳費方式：</p>
+								</div>
+								<div class="col-md-6">
+									<div class="checkout-buttom thankyoupage-btn">
+										<a href="./index.html">
+											<p style="background-color: #36B8A0 !important;">回Colorgy購書平台</p>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="checkout-buttom thankyoupage-btn">
+										<a href="./order-complete.html">
+											<p>列印本頁</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+
+			</div>
+
+
+		<footer>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			<script src="./dist/js/bootstrap.min.js"></script>
+			<script src="./colorgy_front.js"></script>
+			<script src="./js/classie.js"></script>
+			<script src="js/uisearch.js"></script>
+			<script>
+				(function() {
+					[].slice.call( document.querySelectorAll( '.checkout' ) ).forEach( function( el ) {
+						var openCtrl = el.querySelector( '.checkout__button' ),
+							closeCtrls = el.querySelectorAll( '.checkout__cancel' );
+
+						openCtrl.addEventListener( 'click', function(ev) {
+							ev.preventDefault();
+							classie.add( el, 'checkout--active' );
+							classie.add( el, 'checkout-open' );
+						} );
+
+						[].slice.call( closeCtrls ).forEach( function( ctrl ) {
+							ctrl.addEventListener( 'click', function() {
+								classie.remove( el, 'checkout--active' );
+								classie.remove( el, 'checkout-open' );
+							} );
+						} );
+					} );
+				})();
+			</script>
+			<script src="js/selectFx.js"></script>
+			<script>
+				(function() {
+					[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+						new SelectFx(el);
+					} );
+				})();
+			</script>
+		</footer>
+	</body>
+</html>

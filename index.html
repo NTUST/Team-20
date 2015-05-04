@@ -1,62 +1,539 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>TEN DOLLARS</title>
-  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-  <style type="text/css">
-    html, body
-    {
-        height: 96%;
-        background-image: url(img/dark_embroidery.png);
-    }
+	<head>
+		<title>Colorgy Front</title>
+		<meta charset="utf-8">
+		<meta name="keyword" content="COLORGY,BOOKS" />
+		<meta property="og:title" content="Colorgy Front"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,height=device-height" >
+		<link href="normalize.css" rel="stylesheet">
 
-    .container {
-    }
+		<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="./css/checkout-boxes.css" />
+		<link rel="stylesheet" type="text/css" href="./dist/css/bootstrap.css" rel="stylesheet" >
+		<link rel="stylesheet" type="text/css" href="./readme.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+		<link rel="stylesheet" type="text/css" href="css/cs-skin-elastic.css" />
+		<link rel="stylesheet" type="text/css" href="css/checkout-cornerflat.css" />
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/modernizr.js"></script>
 
-    .header {
-      font-family: 'Oswald', sans-serif;
-      font-size: 10em;
-      margin: 0 auto;
-      text-align: center;
-      color: #FFF05A;
-    }
+		<link rel="icon" href="./images/favicon.png" size="16x16" type="image/png">
 
-    .header-img {
-      background-image: url(img/ten_dollars_small.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 100%;
-      height: 465px;
-    }
 
-    .footer {
-      text-align: center;
-      background-color: #E9C49B;
-    }
+	</head>
+	<body>
+		<style type="text/css">
+			div.cs-skin-elastic{
+				margin: 20px;
+			}
+			.col-green-block{
+				padding: 10px !important;
+			}
+			@media screen and ( min-width: 1300px ){
+				.col-md-3{ width: 20%; float: left;}
+			}
+			@media ( min-width: 1038px ) and ( max-width: 1300px ){
+				.col-md-3{ width: 25%; float: left;}
+			}
+			@media ( max-width: 1038px ) and ( min-width: 768px ){
+				.col-md-3{ width: 33.33333%; float: left;}
+			}
+			@media ( max-width: 768px ) and ( min-width: 527px ){
+				.col-md-3{ width: 50%; float: left;}
+			}
+			.push-menu{
+				position: fixed;
+				width: 300px;
+				height: 100vh;
+				left: -300px;
+				top: 0;
+				z-index: 9999999;
+				background-color: #28A38C;
+				transition: transform, 0.5s;
+			}
+			.push-menu-active{
+				transform: translateX( 300px );
+			}
+			.push-menu-container{
+				height: 100%;
+			}
+			.push-menu-ul{
+				padding: 0;
+			}
+			.push-menu-ul > li {
+				list-style-type: none;
+				border-bottom: 2px solid #33C7AB;
+				display: flex;
+			}
+			.push-menu-ul > li > a{
+				color: #ffffff;
+				font-size: 20px;
+				text-align: left;
+				padding: 20px 30px;
+				width: 100%;
+				transition: background-color 0.5s, color 0.5s;
+			}
+			.push-menu-ul > li > a:hover{
+				color: #28A38C;
+				background-color: #ffffff;
+				text-decoration: none;
+			}
 
-    @media screen and (max-width: 713px) {
-      .header {
-        font-size: 7em;
-      }
-    }
+		</style>
+			<div class="push-menu">
+				<div class="push-menu-container">
+					<h2  style="text-align:center; color:#fff;">Catagory</h2>
+					<ul class="push-menu-ul">
+						<li><a href="#">One</a></li>
+						<li><a href="#">Two</a></li>
+						<li><a href="#">Three</a></li>
+						<li><a href="#">Four</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--navigation bar-->
+			<div class="navigation_bar fixed-nav">
+		      <nav class="navbar navbar-default">
+		        <div class="container-fluid">
+		          <!-- Brand and toggle get grouped for better mobile display -->
+		          <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" id="push-menu-trigger">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand" href="./index.html">
+		              <img class="nav-logo" src="./images/header_logo.png">
+		            </a>
+		          </div>
 
-    @media screen and (max-width: 579px) {
-      .header {
-        font-size: 5em;
-      }
-    }
+		          <!-- Collect the nav links, forms, and other content for toggling -->
+		          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		            <ul class="nav navbar-nav">
+		              <li><a href="./shopping-guide1.html">購物流程</a></li>
+		              <li><a href="./order-tracking.html">訂單查詢</a></li>
+		              <li><a href="./mainjew_page.html">主揪介面</a></li>
+		            </ul>
+					<div class="checkout desktop-checkout">
+						<div class="checkout__button__number">
+								4
+						</div>
+						<a class="checkout__button" href="#"><!-- Fallback location -->
+							<span class="checkout__text">
 
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="header-container">
-      <div class="header-img"></div>
-      <div class="header">Ten Dollars</div>
-    </div>
-    <!-- <div class="footer">2015 All Rights Reserved</div> -->
-  </div>
-</body>
+							</span>
+
+						</a>
+						<div class="checkout__order">
+							<div class="checkout__order-inner">
+								<table class="checkout__summary">
+									<thead>
+								        <tr><th>書本項目</th><th>金額</th><th>數量</th><th></th></tr>
+								    </thead>
+								    <tfoot>
+								        <tr><th colspan="2" class="checkout-total-th">總額 <span class="checkout__total">8000 NT</span></th></tr>
+								    </tfoot>
+								    <tbody>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="./images/stickycart-delete.png"></td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="./images/stickycart-delete.png"></td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="./images/stickycart-delete.png"></td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="./images/stickycart-delete.png"></td></tr>
+
+									</tbody>
+								</table><!-- /checkout__summary -->
+
+								<a href="./cart.html"><button class="checkout__option cart-checkout-button">我要結帳</button></a>
+
+								<button class="checkout__close checkout__cancel close-button"><i class="icon fa fa-fw fa-close"></i></button>
+							</div><!-- /checkout__order-inner -->
+						</div><!-- /checkout__order -->
+					</div><!-- /checkout -->
+
+
+		            <ul class="nav navbar-nav navbar-right">
+
+					<div class="profile">
+		            	<div class="headphoto">
+							<img src="./images/headphoto.jpg">
+						</div>
+						<p>劉政軒</p>
+						<div class="profile-field">
+							<ul class="profile-field-ul">
+								<a href="./profile/index.html"><li>基本資料</li></a>
+								<a href="./profile/index.html"><li>聯絡我們</li></a>
+								<a href="./order-tracking.html"><li>訂單查詢</li></a>
+								<a href="./profile/index.html"><li>我的通知</li></a>
+								<a href="./mainjew_page.html"><li>你揪的團</li></a>
+								<a href="#"><li>登出</li></a>
+							</ul>
+						</div>
+					</div>
+		            </ul>
+		          </div><!-- /.navbar-collapse -->
+		        </div><!-- /.container-fluid -->
+		      </nav>
+			</div>
+
+
+		<div class="checkout mobile-checkout">
+						<div class="checkout__button__number">
+								4
+						</div>
+						<a class="checkout__button" href="#"><!-- Fallback location -->
+
+							<span class="checkout__text">
+
+							</span>
+						</a>
+						<div class="checkout__order">
+							<div class="checkout__order-inner">
+								<table class="checkout__summary">
+									<thead>
+								        <tr><th>書本項目</th><th>金額</th><th>數量</th></tr>
+								    </thead>
+								    <tfoot>
+								        <tr><th colspan="2" class="checkout-total-th">總額 <span class="checkout__total">8000 NT</span></th></tr>
+								    </tfoot>
+								    <tbody>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td></tr>
+
+									</tbody>
+								</table><!-- /checkout__summary -->
+								<button class="checkout__option checkout__option--silent checkout__cancel continue-buy"><i class="fa fa-angle-left"></i> 繼續購物...</button>
+
+								<a href="./cart.html"><button class="checkout__option cart-checkout-button">我要結帳</button></a>
+
+								<button class="checkout__close checkout__cancel close-button"><i class="icon fa fa-fw fa-close"></i></button>
+							</div><!-- /checkout__order-inner -->
+						</div><!-- /checkout__order -->
+		</div><!-- /checkout -->
+
+
+		<!---SlideShow首頁header大圖-->
+		<section class="slideshow">
+		<div></div>
+		</section><!--首頁header大圖end-->
+		<!--filter 篩選區塊-->
+		<section class="selection-section">
+			<div class="row" style="max-width:1000px; margin-right:auto; margin-left:auto;">
+				<div class="col-md-4">
+					<select class="cs-select cs-skin-elastic">
+						<option value="" disabled selected>請選擇您的學校</option>
+						<option value="台科大">台科大</option>
+						<option value="元智大學">元智大學</option>
+						<option value="清華大學">清華大學</option>
+						<option value="長庚大學">長庚大學</option>
+					</select>
+				</div>
+				<div class="col-md-4">
+					<select class="cs-select cs-skin-elastic">
+						<option value="" disabled selected>請選擇您的系別</option>
+						<option value="資訊工程系">資訊工程系</option>
+						<option value="電資學士班">電資學士班</option>
+						<option value="企業管理系">企業管理系</option>
+						<option value="創意設計學士班">創意設計學士班</option>
+					</select>
+				</div>
+
+				<div class="col-md-4">
+						<div id="sb-search" class="sb-search sb-search-open">
+							<form>
+								<input class="sb-search-input" placeholder="請輸入搜尋關鍵字..." type="text" value="" name="search" id="search">
+								<input class="sb-search-submit" type="submit" value="">
+								<span class="sb-icon-search"><img src="./images/search.png"></span>
+							</form>
+						</div>
+				</div>
+			</div>
+
+
+		</section>
+		<!--篩選filter區塊end-->
+
+		<!--書的呈現區塊-->
+		<section class="book-section">
+			<div class="container-fluid">
+					<div class="col-md-3">
+						<div class="product-box" >
+							<div class="product-box-image">
+									<a href="./books-page.html"><img src="./images/sedra.jpg" style="width:100%;"></a>
+							</div>
+							<div class="product-text-box">
+								<div class="product-title">
+									<div class="book-name">
+										<span>INTRODUCTION TO ELECTRIC CIRCUITS 8/E</span>
+									</div>
+									<div class="book-author">
+										<span>Author: Sadra Smith</span>
+									</div>
+									<div class="book-edition">
+										<span>6th edition</span>
+									</div>
+								</div>
+								<div class="product-price">
+
+									<p><del> 定價:1000 </del></p>
+									<h4>優惠價: 830</h4>
+								</div>
+								<div class="add-to-cart">
+									<div class="row">
+											<div class="col-md-12">
+												<div class="select-box cart-select">
+													<select class="cs-select cs-skin-elastic">
+														<option value="" disabled selected>請選擇您的課程</option>
+														<option value="台科大">電子學-彭盛裕</option>
+														<option value="元智大學">電子學-蔡超人</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-12"><p style="color: #fff; margin-left: 20px; margin-top:5px; float: left;">數量 ： </p><input class="input-number" type="number" name="quantity" min="0" placeholder="1"></div>
+									</div>
+									<div class="add-to-cart-button">
+										<h5 class="modal-toggle-h5">加入書包</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="product-box" >
+							<div class="product-box-image">
+									<a href="./books-page.html"><img src="./images/sedra.jpg" style="width:100%;"></a>
+							</div>
+							<div class="product-text-box">
+								<div class="product-title">
+									<div class="book-name">
+										<span>INTRODUCTION TO ELECTRIC CIRCUITS 8/E</span>
+									</div>
+									<div class="book-author">
+										<span>Author: Sadra Smith</span>
+									</div>
+									<div class="book-edition">
+										<span>6th edition</span>
+									</div>
+								</div>
+								<div class="product-price">
+
+									<p><del> 定價:1000 </del></p>
+									<h4>優惠價: 830</h4>
+								</div>
+								<div class="add-to-cart">
+									<div class="row">
+											<div class="col-md-12">
+												<div class="select-box cart-select">
+													<select class="cs-select cs-skin-elastic">
+														<option value="" disabled selected>請選擇您的課程</option>
+														<option value="台科大">電子學-彭盛裕</option>
+														<option value="元智大學">電子學-蔡超人</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-12"><p style="color: #fff; margin-left: 20px; margin-top:5px; float: left;">數量 ： </p><input class="input-number" type="number" name="quantity" min="0" placeholder="1"></div>
+									</div>
+									<div class="add-to-cart-button">
+										<h5 class="modal-toggle-h5">加入書包</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="product-box" >
+							<div class="product-box-image">
+									<a href="./books-page.html"><img src="./images/sedra.jpg" style="width:100%;"></a>
+							</div>
+							<div class="product-text-box">
+								<div class="product-title">
+									<div class="book-name">
+										<span>INTRODUCTION TO ELECTRIC CIRCUITS 8/E</span>
+									</div>
+									<div class="book-author">
+										<span>Author: Sadra Smith</span>
+									</div>
+									<div class="book-edition">
+										<span>6th edition</span>
+									</div>
+								</div>
+								<div class="product-price">
+
+									<p><del> 定價:1000 </del></p>
+									<h4>優惠價: 830</h4>
+								</div>
+								<div class="add-to-cart">
+									<div class="row">
+											<div class="col-md-12">
+												<div class="select-box cart-select">
+													<select class="cs-select cs-skin-elastic">
+														<option value="" disabled selected>請選擇您的課程</option>
+														<option value="台科大">電子學-彭盛裕</option>
+														<option value="元智大學">電子學-蔡超人</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-12"><p style="color: #fff; margin-left: 20px; margin-top:5px; float: left;">數量 ： </p><input class="input-number" type="number" name="quantity" min="0" placeholder="1"></div>
+									</div>
+									<div class="add-to-cart-button">
+										<h5 class="modal-toggle-h5">加入書包</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+										<div class="col-md-3">
+						<div class="product-box" >
+							<div class="product-box-image">
+									<a href="./books-page.html"><img src="./images/sedra.jpg" style="width:100%;"></a>
+							</div>
+							<div class="product-text-box">
+								<div class="product-title">
+									<div class="book-name">
+										<span>INTRODUCTION TO ELECTRIC CIRCUITS 8/E</span>
+									</div>
+									<div class="book-author">
+										<span>Author: Sadra Smith</span>
+									</div>
+									<div class="book-edition">
+										<span>6th edition</span>
+									</div>
+								</div>
+								<div class="product-price">
+
+									<p><del> 定價:1000 </del></p>
+									<h4>優惠價: 830</h4>
+								</div>
+								<div class="add-to-cart">
+									<div class="row">
+											<div class="col-md-12">
+												<div class="select-box cart-select">
+													<select class="cs-select cs-skin-elastic">
+														<option value="" disabled selected>請選擇您的課程</option>
+														<option value="台科大">電子學-彭盛裕</option>
+														<option value="元智大學">電子學-蔡超人</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-12"><p style="color: #fff; margin-left: 20px; margin-top:5px; float: left;">數量 ： </p><input class="input-number" type="number" name="quantity" min="0" placeholder="1"></div>
+									</div>
+									<div class="add-to-cart-button">
+										<h5 class="modal-toggle-h5">加入書包</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="product-box" >
+							<div class="product-box-image">
+									<a href="./books-page.html"><img src="./images/sedra.jpg" style="width:100%;"></a>
+							</div>
+							<div class="product-text-box">
+								<div class="product-title">
+									<div class="book-name">
+										<span>INTRODUCTION TO ELECTRIC CIRCUITS 8/E</span>
+									</div>
+									<div class="book-author">
+										<span>Author: Sadra Smith</span>
+									</div>
+									<div class="book-edition">
+										<span>6th edition</span>
+									</div>
+								</div>
+								<div class="product-price">
+
+									<p><del> 定價:1000 </del></p>
+									<h4>優惠價: 830</h4>
+								</div>
+								<div class="add-to-cart">
+									<div class="row">
+											<div class="col-md-12">
+												<div class="select-box cart-select">
+													<select class="cs-select cs-skin-elastic">
+														<option value="" disabled selected>請選擇您的課程</option>
+														<option value="台科大">電子學-彭盛裕</option>
+														<option value="元智大學">電子學-蔡超人</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-12"><p style="color: #fff; margin-left: 20px; margin-top:5px; float: left;">數量 ： </p><input class="input-number" type="number" name="quantity" min="0" placeholder="1"></div>
+									</div>
+									<div class="add-to-cart-button">
+										<h5 class="modal-toggle-h5">加入書包</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+
+
+
+		</section>
+		<footer>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			<script src="./dist/js/bootstrap.min.js"></script>
+			<script src="./colorgy_front.js"></script>
+			<script src="./js/classie.js"></script>
+			<script>
+				(function() {
+					[].slice.call( document.querySelectorAll( '.checkout' ) ).forEach( function( el ) {
+						var openCtrl = el.querySelector( '.checkout__button' ),
+							closeCtrls = el.querySelectorAll( '.checkout__cancel' );
+
+						openCtrl.addEventListener( 'click', function(ev) {
+							ev.preventDefault();
+							classie.add( el, 'checkout--active' );
+						} );
+
+						[].slice.call( closeCtrls ).forEach( function( ctrl ) {
+							ctrl.addEventListener( 'click', function() {
+								classie.remove( el, 'checkout--active' );
+							} );
+						} );
+					} );
+				})();
+			</script>
+			<script src="js/selectFx.js"></script>
+			<script>
+			(function() {
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+					new SelectFx(el);
+				} );
+			})();
+			</script>
+			<script src="js/velocity.min.js"></script>
+			<script src="js/main.js"></script>
+			<script src="./js/jquery.textfill.min.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+				    $('.book-name').textfill({ maxFontPixels: 36 });
+				    $('.book-name').textfill({ minFontPixels: 15 });
+				    $('.book-author').textfill({ maxFontPixels: 13 });
+
+				    $('#push-menu-trigger').click(function(){
+				    	if ( $( '.push-menu' ).hasClass( "push-menu-active" ) ){
+				    		$('.push-menu').removeClass('push-menu-active');
+				    	}
+				    	else{
+				    		$('.push-menu').addClass('push-menu-active');
+				    	}
+				    })
+				    $('body').click(function(evt){
+				    	if ($(evt.target).parents(".push-menu").length==0 && evt.target.class != "push-menu" && evt.target.id != "push-menu-trigger") {
+				    	$('.push-menu').removeClass('push-menu-active')};
+				    })
+				});
+			</script>
+		</footer>
+	</body>
 </html>
-
-

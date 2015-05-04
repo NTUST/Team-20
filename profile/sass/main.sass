@@ -1,0 +1,159 @@
+@import compass
+@import compass/css3
+@import compass/css3/box-sizing
+@import ceaser-easing
+
+@import contactus
+@import notify
+
+$profile-h: 200px
+$profile-w: 200px
+$misk: #33c7ab
+$colors: #3307ab #85DCCD #71D7C4 #5CD1BC #48CCB3 #C1EEE6
+
+.profile-back
+	position: relative
+	@media screen and (max-width: 640px)
+		height: 200px
+	@media screen and (min-width: 640px)
+		height: 400px
+	+box-sizing(border-sizing)
+	background-color: $misk
+	text-align: center
+	.profile
+		position: absolute
+		top: 20%
+		@media screen and (max-width: 640px)
+			left: calc( 50% - 50px )
+			width: $profile-w/2
+			height: $profile-h/2
+		@media screen and (min-width: 640px)
+			left: calc( 50% - 100px )
+			width: $profile-w
+			height: $profile-h
+		background-image: url("../profile.jpg")
+		background-size: 100% 100%
+		border: #ddd 3px solid
+		+border-radius(50%)
+	.name
+		position: absolute
+		left: calc( 50% - 39px )
+		top: 75%
+		color: #fff
+		font-size: 26px
+		height: 16px
+
+
+.detail
+	.info
+		// position: relative
+		// display: table
+		// width: 50%
+		margin: 0 auto
+		padding: 50px 0 0 0
+		// line-height: 25px
+		.row-md
+			width: 70%
+			margin: 0 auto 0 auto
+			min-width: 320-20px
+			line-height: 50px
+			input
+				&[disabled]
+					background-color: #fff
+					color: #575757
+					// color: #a00
+					cursor: default
+				@media screen and (min-width: 1000px)
+					width: 65%
+				@media screen and (max-width: 1000px)
+					width: 85%
+				@media screen and (max-width: 640px)
+					width: 100%
+		.title
+			top: -9px
+			text-align: right
+
+
+.truncate
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+
+.large-text
+	font-size: 15px
+
+.box
+	position: relative
+	height: 500px
+	width: 100%
+	background-color: rgb(240,240,240)
+	display: block
+	z-index: 10
+	// +box-shadow(4px -2px 2px rgba(100,100,100,0.3))
+
+// 套色
+@for $i from 1 through 5
+	.green#{$i}
+		background-color: nth($colors,$i)
+
+.nav-tabs
+	background-color: $misk
+	position: relative
+	li
+		width: 20%
+		text-align: center
+		position: relative
+		// +box-shadow(0px -1px 2px rgba(100,100,100,0.3))
+		&.active
+			z-index: 11
+			// +box-shadow(0px -2px 2px rgba(100,100,100,0.3))
+			a
+				color: $misk
+				background-color: rgb(240,240,240)
+				border: 1px solid transparent
+				+transition(all 0.3s)
+				@media screen and (min-width: 500px)
+					&:after
+						content: ""
+						position: absolute
+						background-color: $misk
+						height: 2px
+						width: 60px
+						left: calc( 50% - 30px)
+						top: 30px
+				&:hover, &:focus
+					background-color: rgb(240,240,240)
+					color: $misk
+					border: 1px solid transparent
+
+		a
+			color: #fff // font color
+			+transition(all 0.3s)
+			+border-radius(0)
+			margin-right: 0
+			border-bottom-color: transparent
+			z-index: 1
+			&:focus, &:hover
+				background-color: #28A38C
+				border-color: transparent transparent transparent transparent
+
+// .input
+// 	overflow: hidden
+// 	height: 100px
+// 	+box-sizing(border-box)
+// 	.input-test
+// 		display: table-cell
+// 		vertical-align: middle
+// 		border: #000 2px solid
+// 		+border-radius(5px)
+// 		background-color: rgb(240,240,240)
+// 		width: 100px
+// 		margin: auto auto auto auto
+// 		+transition(all 0.3s)
+// 		&:focus
+// 			width: 200px
+// 			padding: 10px 10px 10px 10px
+// 			outline: none
+
+
+

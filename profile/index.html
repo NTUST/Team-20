@@ -1,0 +1,292 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no,height=device-height" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../readme.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="stylesheets/animate.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+<link rel="stylesheet" type="text/css" href="../css/checkout-boxes.css" />
+<link rel="stylesheet" type="text/css" href="../css/checkout-cornerflat.css" />
+
+
+<style type="text/css">
+	.profile-panel > ul > li{
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+		border-bottom: 0px !important;
+	}
+	.profile-panel > ul > li:hover{
+		border-bottom: 0px !important;
+	}
+	.profile-panel{
+		margin-top: -1px;
+	}
+</style>
+
+</head>
+<body>
+		<div class="navigation_bar fixed-nav">
+		      <nav class="navbar navbar-default">
+		        <div class="container-fluid">
+		          <!-- Brand and toggle get grouped for better mobile display -->
+		          <div class="navbar-header">
+		            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		              <span class="sr-only">Toggle navigation</span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		              <span class="icon-bar"></span>
+		            </button>
+		            <a class="navbar-brand" href="../index.html">
+		              <img class="nav-logo" src="../images/header_logo.png">
+		            </a>
+		          </div>
+
+		          <!-- Collect the nav links, forms, and other content for toggling -->
+		          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		            <ul class="nav navbar-nav">
+		              <li><a href="#element1">購物流程</a></li>
+		              <li><a href="../order-tracking.html">訂單查詢</a></li>
+		              <li><a href="../mainjew_page.html">主揪介面</a></li>
+		            </ul>
+					<div class="checkout desktop-checkout">
+						<div class="checkout__button__number">
+								4
+						</div>
+						<a class="checkout__button" href="#"><!-- Fallback location -->
+							<span class="checkout__text">
+
+							</span>
+
+						</a>
+						<div class="checkout__order">
+							<div class="checkout__order-inner">
+								<table class="checkout__summary">
+									<thead>
+								        <tr><th>書本項目</th><th>金額</th><th>數量</th><th></th></tr>
+								    </thead>
+								    <tfoot>
+								        <tr><th colspan="2" class="checkout-total-th">總額 <span class="checkout__total">8000 NT</span></th></tr>
+								    </tfoot>
+								    <tbody>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="../images/stickycart-delete.png"></td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="../images/stickycart-delete.png"></td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="../images/stickycart-delete.png"></td></tr>
+										<tr><td>INTRODUCTION TO ELECTRIC CIRCUITS 8/E <span>8/e</span><span>Sedra Smith</span></td><td>2000 NT</td><td>x1</td><td class="stickycart-delete"><img src="../images/stickycart-delete.png"></td></tr>
+
+									</tbody>
+								</table><!-- /checkout__summary -->
+
+								<a href="./cart.html"><button class="checkout__option cart-checkout-button">我要結帳</button></a>
+
+								<button class="checkout__close checkout__cancel close-button"><i class="icon fa fa-fw fa-close"></i></button>
+							</div><!-- /checkout__order-inner -->
+						</div><!-- /checkout__order -->
+					</div><!-- /checkout -->
+
+
+		            <ul class="nav navbar-nav navbar-right">
+
+					<div class="profile">
+		            	<div class="headphoto">
+							<img src="./profile.jpg">
+						</div>
+						<p>林立穎</p>
+						<div class="profile-field">
+								<ul class="profile-field-ul">
+									<a href="./profile/index.html"><li>基本資料</li></a>
+									<a href="./profile/index.html"><li>聯絡我們</li></a>
+									<a href="./order-tracking.html"><li>訂單查詢</li></a>
+									<a href="./profile/index.html"><li>我的通知</li></a>
+									<a href="./mainjew_page.html"><li>你揪的團</li></a>
+									<a href="#"><li>登出</li></a>
+								</ul>
+						</div>
+					</div>
+		            </ul>
+		          </div><!-- /.navbar-collapse -->
+		        </div><!-- /.container-fluid -->
+		      </nav>
+			</div>
+
+<div class="profile-back">
+	<div class="profile"></div>
+	<div class="name">林立穎</div>
+</div>
+<div class="profile-panel" role="tabpanel">
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs large-text" role="tablist" id="hiTab">
+		<li role="presentation" class=" active"><a href="#home" class="green1" aria-controls="home" role="tab" data-toggle="tab">基本資料</a></li>
+		<li role="presentation"><a href="#profile" class="green2" aria-controls="profile" role="tab" data-toggle="tab">聯絡我們</a></li>
+		<li role="presentation"><a href="#messages" class="green3" aria-controls="messages" role="tab" data-toggle="tab">訂單查詢</a></li>
+		<li role="presentation" class="notif-container"><a href="#settings" class="green4" aria-controls="settings" role="tab" data-toggle="tab">我的通知</a><span class="notify">hi</span></li>
+		<li role="presentation" class="chou-container"><a href="#userset" class="green5" aria-controls="userset" role="tab" data-toggle="tab">你的揪團</a></li>
+	</ul>
+
+	<!-- Tab panes -->
+	<div class="tab-content box">
+		<div role="tabpanel" class="tab-pane fade in active" id="home">
+		<div class="detail">
+			<div class="info">
+				<div class="row row-md"><span class="col-md-4 col-sm-4 col-xs-4 title">　　暱稱：</span><span class="col-md-8 col-sm-8 col-xs-8"><input class="form-control" type="text" value="安安你好嗎？"></span></div>
+				<div class="row row-md"><span class="col-md-4 col-sm-4 col-xs-4 title">　　姓名：</span><span class="col-md-8 col-sm-8 col-xs-8"><input class="form-control" disabled="true" type="text" value="林立穎"></span></div>
+				<div class="row row-md"><span class="col-md-4 col-sm-4 col-xs-4 title">　　學校：</span><span class="col-md-8 col-sm-8 col-xs-8"><input class="form-control" disabled="true" type="text" value="台灣ㄎㄐㄉㄒ"></span></div>
+				<div class="row row-md"><span class="col-md-4 col-sm-4 col-xs-4 title">手機號碼：</span><span class="col-md-8 col-sm-8 col-xs-8"><input class="form-control" type="text" value="0988913868"></span></div>
+				<div class="row row-md"><span class="col-md-4 col-sm-4 col-xs-4 title">學校信箱：</span><span class="col-md-8 col-sm-8 col-xs-8 truncate"><input class="form-control" type="text" value="b10134015@mail.ntust.edu.tw" disabled="true"></span></div>
+				<div class="row row-md"><span class="col-md-4 col-sm-4 col-xs-4 title">主要信箱：</span><span class="col-md-8 col-sm-8 col-xs-8"><input class="form-control" type="text" value="安安好@me.com"></span></div>
+				<div class="row row-md"><button type="button" class="col-md-12 btn confirm">確認修改</button></div>
+			</div>
+		</div>
+		</div>
+		<div role="tabpanel" class="tab-pane fade" id="profile">
+			<div class="row">
+				<span class="problem  col-md-12 spacing">你有什麼問題？</span>
+			</div>
+			<div class="row">
+				<div class="dropdown drop-box  col-md-12">
+				 	<button class="btn-hi btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+				    請選擇問題
+				    <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">我肚子餓</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">我想大便</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">歐嗚嗚嗚嗚</a></li>
+						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">ㄏ一</a></li>
+				  	</ul>
+				</div>
+			</div>
+			<div class="row">
+				<span class="problem-title  col-md-12 spacing">標題：</span>
+			</div>
+			<div class="row spacing">
+				<input type="text" class="col-md-12 form-control" placeholder="輸入標題">
+			</div>
+			<div class="row spacing">
+				<span class="col-md-12">問題內容：</span>
+			</div>
+			<div class="row spacing">
+				<textarea class="form-control col-md-12" rows="6" placeholder="內容"></textarea>
+			</div>
+			<div class="row spacing">
+				<button type="button" class="btn btn-warning submmit">送出問題</button>
+			</div>
+
+		</div>
+		<div role="tabpanel" class="tab-pane fade" id="messages">
+			<div class="detail">
+				<div class="info">
+					<div id="contact"><label for="input">hihi</label><input type="text" class="input"></div>
+				</div>
+			</div>
+		</div>
+		<div role="tabpanel" class="tab-pane fade" id="settings"><div class="detail">好，好，好</div></div>
+		<div role="tabpanel" class="tab-pane fade" id="userset"><div class="detail">好。好好。</div></div>
+	</div>
+
+</div>
+
+<footer>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="../colorgy_front.js"></script>
+<script>
+$(function(){
+	$('.nav-tabs').children('li:nth-child(1)').click(function() {
+		console.log('222')
+		$('.nav-tabs').children('li:nth-child(2)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(3)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(4)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(5)').children('a').removeClass('green1 green2 green3 green4 green5')
+		// add class
+		$('.nav-tabs').children('li:nth-child(2)').children('a').addClass('green2');
+		$('.nav-tabs').children('li:nth-child(3)').children('a').addClass('green3');
+		$('.nav-tabs').children('li:nth-child(4)').children('a').addClass('green4');
+		$('.nav-tabs').children('li:nth-child(5)').children('a').addClass('green5');
+	});
+	$('.nav-tabs').children('li:nth-child(2)').click(function() {
+		console.log('222')
+		$('.nav-tabs').children('li:nth-child(1)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(3)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(4)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(5)').children('a').removeClass('green1 green2 green3 green4 green5')
+		// add class
+		$('.nav-tabs').children('li:nth-child(1)').children('a').addClass('green2');
+		$('.nav-tabs').children('li:nth-child(3)').children('a').addClass('green2');
+		$('.nav-tabs').children('li:nth-child(4)').children('a').addClass('green3');
+		$('.nav-tabs').children('li:nth-child(5)').children('a').addClass('green4');
+	});
+	$('.nav-tabs').children('li:nth-child(3)').click(function() {
+		console.log('222')
+		$('.nav-tabs').children('li:nth-child(1)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(2)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(4)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(5)').children('a').removeClass('green1 green2 green3 green4 green5')
+		// add class
+		$('.nav-tabs').children('li:nth-child(1)').children('a').addClass('green3');
+		$('.nav-tabs').children('li:nth-child(2)').children('a').addClass('green2');
+		$('.nav-tabs').children('li:nth-child(4)').children('a').addClass('green2');
+		$('.nav-tabs').children('li:nth-child(5)').children('a').addClass('green3');
+	});
+	$('.nav-tabs').children('li:nth-child(4)').click(function() {
+		console.log('222')
+		$('.nav-tabs').children('li:nth-child(1)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(2)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(3)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(5)').children('a').removeClass('green1 green2 green3 green4 green5')
+		// add class
+		$('.nav-tabs').children('li:nth-child(1)').children('a').addClass('green4');
+		$('.nav-tabs').children('li:nth-child(2)').children('a').addClass('green3');
+		$('.nav-tabs').children('li:nth-child(3)').children('a').addClass('green2');
+		$('.nav-tabs').children('li:nth-child(5)').children('a').addClass('green2');
+	});
+	$('.nav-tabs').children('li:nth-child(5)').click(function() {
+		console.log('222')
+		$('.nav-tabs').children('li:nth-child(1)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(2)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(4)').children('a').removeClass('green1 green2 green3 green4 green5')
+		$('.nav-tabs').children('li:nth-child(3)').children('a').removeClass('green1 green2 green3 green4 green5')
+		// add class
+		$('.nav-tabs').children('li:nth-child(1)').children('a').addClass('green5');
+		$('.nav-tabs').children('li:nth-child(2)').children('a').addClass('green4');
+		$('.nav-tabs').children('li:nth-child(3)').children('a').addClass('green3');
+		$('.nav-tabs').children('li:nth-child(4)').children('a').addClass('green2');
+	});
+
+
+	//dropdown region
+	// ADD SLIDEDOWN ANIMATION TO DROPDOWN //
+	$('.dropdown').on('show.bs.dropdown', function(e){
+		$(this).find('.dropdown-menu').first().stop(true, true).slideDown(140, 'swing');
+	});
+
+	// ADD SLIDEUP ANIMATION TO DROPDOWN //
+	$('.dropdown').on('hide.bs.dropdown', function(e){
+		$(this).find('.dropdown-menu').first().stop(true, true).slideUp(140, 'swing');
+	});
+});
+</script>
+			<script src="../js/classie.js"></script>
+			<script>
+				(function() {
+					[].slice.call( document.querySelectorAll( '.checkout' ) ).forEach( function( el ) {
+						var openCtrl = el.querySelector( '.checkout__button' ),
+							closeCtrls = el.querySelectorAll( '.checkout__cancel' );
+
+						openCtrl.addEventListener( 'click', function(ev) {
+							ev.preventDefault();
+							classie.add( el, 'checkout--active' );
+						} );
+
+						[].slice.call( closeCtrls ).forEach( function( ctrl ) {
+							ctrl.addEventListener( 'click', function() {
+								classie.remove( el, 'checkout--active' );
+							} );
+						} );
+					} );
+				})();
+			</script>
+</footer>
+</body>
+</html>

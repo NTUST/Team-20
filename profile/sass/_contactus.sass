@@ -1,0 +1,104 @@
+@import compass
+@import compass/css3
+@import compass/css3/box-sizing
+@import ceaser-easing
+
+$box-h: 30px
+$box-w: 100px
+
+#profile
+	@media screen and (min-width: 720px)
+		width: 50%
+	@media screen and (max-width: 720px)
+		width: 65%
+	@media screen and (max-width: 640px)
+		width: 80%
+	// min-width: 270px
+	margin: 0 auto
+	padding-top: 30px
+	float: none
+	.problem
+		display: inline-block
+		margin: 3px 0 0 0
+
+	.submmit
+		position: relative
+		float: right
+		margin: 20px 7% 0 0
+		background-color: #E06038
+		border-color: #E06038
+		outline: none
+		+box-shadow(0px 5px 0px #c6471f)
+		&:hover
+			top: 2px
+			+box-shadow(0px 3px 0px #c6471f)
+		&:active
+			top: 5px
+			+box-shadow(0px 0px 0px #c6471f)
+	.form-control
+		width: 90%
+		margin-left: 15px
+	.drop-box
+		display: inline-block
+	.spacing
+		line-height: 48px
+
+@mixin submit-skin
+	color: #fff
+	background-color: #E06038
+	border-color: #E06038
+	width: 82px
+	outline: none
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+.confirm
+	position: relative
+	margin: 20px 0% 0 0
+	left: calc( 50% - 41px )
+	+submit-skin
+	+box-shadow(0px 5px 0px #c6471f)
+	&:hover
+		top: 2px
+		+submit-skin
+		+box-shadow(0px 3px 0px #c6471f)
+	&:active
+		top: 5px
+		+submit-skin
+		+box-shadow(0px 0px 0px #c6471f)
+	&:focus
+		+submit-skin
+
+
+
+
+
+
+
+
+#contact
+	position: relative
+	height: 150px
+	width: 300px
+	+box-sizing(border-box)
+	border: #0a0 1px solid
+	.input
+		position: absolute
+		height: $box-h
+		width: $box-w
+		left: 50%
+		top: 50%
+		margin-top: -$box-h/2
+		margin-left: -$box-w/2
+		border-top: #0a0 2px solid
+		border-bottom: #0a0 2px solid
+		border-left: transparent
+		border-right: transparent
+		background-color: transparent
+		+transition(all 0.3s)
+		&:focus
+			height: $box-h*2
+			width: $box-w
+			top: 50%
+			left: 50%
+			margin-top: -$box-h
+			margin-left: -$box-w/2
+			outline: none
